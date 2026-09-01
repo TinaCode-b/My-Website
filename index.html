@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tina —  Designer & Developer</title>
+    <title>Tina - Mobile App Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-tag"><span class="hero-tag-dot"></span> Available for projects</div>
+            <div class="hero-tag"><span class="hero-tag-dot"></span> Open to freelance and internship opportunities</div>
             <h1 class="hero-title">
                 <span class="line">Hi, I'm</span>
                 <span class="line name-line">Tina<span class="accent">.</span></span>
@@ -85,53 +85,78 @@
                 <div class="phone-screen">
                     <div class="app-statusbar">
                         <span>9:41</span>
-                        <span>&#x25CF;&#x25CF;&#x25CF;</span>
+                        <span class="status-right">
+                            <span>5G</span>
+                            <span>82%</span>
+                        </span>
                     </div>
                     <div class="app-topbar">
-                        <h4>Dashboard</h4>
-                        <span>Welcome back</span>
+                        <div>
+                            <p class="app-greeting">Good morning, Tina</p>
+                            <h4>Project Overview</h4>
+                        </div>
+                        <button type="button" class="app-notify" aria-label="Notifications">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="app-cards">
                         <div class="app-card">
-                            <strong>128</strong>
-                            <span>Active users</span>
+                            <span class="app-card-label">Weekly installs</span>
+                            <strong class="app-card-value">1,284</strong>
+                            <span class="app-card-trend">+12.4%</span>
                         </div>
                         <div class="app-card">
-                            <strong>98%</strong>
-                            <span>Uptime</span>
+                            <span class="app-card-label">Crash-free rate</span>
+                            <strong class="app-card-value">99.2%</strong>
+                            <span class="app-card-trend">Stable</span>
                         </div>
                     </div>
-                    <div class="app-list">
-                        <div class="app-list-item">
-                            <div class="app-list-dot"></div>
-                            <div>
-                                <span class="app-list-title">Push notification</span>
-                                <span class="app-list-sub">Sent 2 min ago</span>
-                            </div>
+                    <div class="app-progress-card">
+                        <div class="app-progress-head">
+                            <span>Sprint progress</span>
+                            <strong>76%</strong>
                         </div>
-                        <div class="app-list-item">
-                            <div class="app-list-dot"></div>
-                            <div>
-                                <span class="app-list-title">New sign-up</span>
-                                <span class="app-list-sub">Sent 14 min ago</span>
-                            </div>
+                        <div class="app-progress-track">
+                            <span></span>
                         </div>
-                        <div class="app-list-item">
-                            <div class="app-list-dot"></div>
-                            <div>
-                                <span class="app-list-title">Payment received</span>
-                                <span class="app-list-sub">Sent 1 hr ago</span>
+                        <p>3 tasks left for today</p>
+                    </div>
+                    <div class="app-list-wrap">
+                        <h5 class="app-section-title">Today's activity</h5>
+                        <div class="app-list">
+                            <div class="app-list-item">
+                                <div class="app-list-dot blue"></div>
+                                <div class="app-list-copy">
+                                    <span class="app-list-title">Build completed</span>
+                                    <span class="app-list-sub">Android production build</span>
+                                </div>
+                                <span class="app-list-time">2m</span>
+                            </div>
+                            <div class="app-list-item">
+                                <div class="app-list-dot orange"></div>
+                                <div class="app-list-copy">
+                                    <span class="app-list-title">Client feedback</span>
+                                    <span class="app-list-sub">UI updates requested</span>
+                                </div>
+                                <span class="app-list-time">14m</span>
+                            </div>
+                            <div class="app-list-item">
+                                <div class="app-list-dot pink"></div>
+                                <div class="app-list-copy">
+                                    <span class="app-list-title">Invoice paid</span>
+                                    <span class="app-list-sub">Milestone 2 confirmed</span>
+                                </div>
+                                <span class="app-list-time">1h</span>
                             </div>
                         </div>
                     </div>
                     <div class="app-tabbar">
-                        <span class="tab-dot active"></span>
-                        <span class="tab-dot"></span>
-                        <span class="tab-dot"></span>
-                        <span class="tab-dot"></span>
+                        <span class="tab-item active"><span class="tab-icon"></span>Home</span>
+                        <span class="tab-item"><span class="tab-icon"></span>Analytics</span>
+                        <span class="tab-item"><span class="tab-icon"></span>Tasks</span>
                     </div>
                 </div>
-                <div class="phone-tag">&#x1F4F1; Built with React Native</div>
+                <div class="phone-tag">Built with React Native</div>
             </div>
         </div>
         <div class="scroll-hint">
@@ -187,7 +212,13 @@
         <h2 class="section-title centered">My Skills<span class="accent">.</span></h2>
 
         <div class="skill-card skill-featured">
-            <div class="skill-icon">&#x1F4F1;</div>
+            <div class="skill-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="7" y="2.5" width="10" height="19" rx="2"></rect>
+                    <line x1="10" y1="6.5" x2="14" y2="6.5"></line>
+                    <circle cx="12" cy="18.2" r="1"></circle>
+                </svg>
+            </div>
             <div class="skill-featured-content">
                 <h3>Mobile App Development</h3>
                 <p>Building cross-platform mobile apps with React Native — from UI and navigation to API integration and app store deployment.</p>
@@ -202,17 +233,35 @@
 
         <div class="skills-grid">
             <div class="skill-card">
-                <div class="skill-icon">&#x1F310;</div>
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 8l-4 4 4 4"></path>
+                        <path d="M16 8l4 4-4 4"></path>
+                        <line x1="14" y1="5" x2="10" y2="19"></line>
+                    </svg>
+                </div>
                 <h3>Web Development</h3>
                 <p>HTML, CSS, and JavaScript to create responsive and visually appealing websites that work on all devices.</p>
             </div>
             <div class="skill-card">
-                <div class="skill-icon">&#x1F4BB;</div>
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="5" width="18" height="12" rx="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                </div>
                 <h3>Software Development</h3>
                 <p>Proficient in Java, C++, and Python for building robust software applications and algorithms.</p>
             </div>
             <div class="skill-card">
-                <div class="skill-icon">&#x1F4E3;</div>
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 11v2a2 2 0 0 0 2 2h2l4 4V5L7 9H5a2 2 0 0 0-2 2z"></path>
+                        <path d="M15 9a4 4 0 0 1 0 6"></path>
+                        <path d="M17.5 6.5a7 7 0 0 1 0 11"></path>
+                    </svg>
+                </div>
                 <h3>Social Media Management</h3>
                 <p>Manage and optimize social media accounts to enhance online presence and drive meaningful engagement.</p>
             </div>
@@ -239,18 +288,29 @@
                         <span class="contact-value">bdernestina5@gmail.com</span>
                     </div>
                 </a>
-                <a href="https://linkedin.com" target="_blank" class="contact-item">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-item">
                     <div class="contact-icon"><img src="linkedin.png" alt="LinkedIn"></div>
                     <div>
                         <span class="contact-label">LinkedIn</span>
-                        <span class="contact-value">@bdernestina5@gmail.com</span>
+                        <span class="contact-value">linkedin.com</span>
                     </div>
                 </a>
-                <a href="https://instagram.com/iam_akuah" target="_blank" class="contact-item">
+                <a href="https://instagram.com/iam_akuah" target="_blank" rel="noopener noreferrer" class="contact-item">
                     <div class="contact-icon"><img src="instagram.png" alt="Instagram"></div>
                     <div>
                         <span class="contact-label">Instagram</span>
                         <span class="contact-value">@iam_akuah</span>
+                    </div>
+                </a>
+                <a href="https://github.com/TinaCode-b" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.58 2 12.22c0 4.5 2.87 8.31 6.84 9.66.5.1.68-.22.68-.5 0-.25-.01-1.07-.01-1.94-2.78.62-3.37-1.21-3.37-1.21-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .08 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.13.63-1.39-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.75c.85 0 1.71.12 2.52.37 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.21 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.6.69.5A10.2 10.2 0 0 0 22 12.22C22 6.58 17.52 2 12 2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">@TinaCode-b</span>
                     </div>
                 </a>
             </div>
@@ -288,7 +348,7 @@
     </section>
 
     <footer class="footer">
-        <p>Crafted with <span class="heart">&#x2665;</span> by <strong>Tina Codes</strong> &middot; <span id="year"></span></p>
+        <p>Designed and built by <strong>Tina Codes</strong> &middot; <span id="year"></span></p>
     </footer>
 
     <script src="web.js"></script>
