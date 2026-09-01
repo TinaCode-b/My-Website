@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tina —  Designer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <div class="bg-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">Tina Codes<span class="logo-dot">.</span></a>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="toggle-track">
+                <span class="toggle-thumb">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </span>
+            </span>
+            <span class="toggle-label">Dark Mode</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-tag"><span class="hero-tag-dot"></span> Available for projects</div>
+            <h1 class="hero-title">
+                <span class="line">Hi, I'm</span>
+                <span class="line name-line">Tina<span class="accent">.</span></span>
+            </h1>
+            <p class="hero-subtitle">Mobile App Developer building for iOS &amp; Android</p>
+            <p class="hero-desc">I build cross-platform mobile apps with React Native and clean, responsive websites — engineered to feel native and perform well on real devices.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                <a href="#skills" class="btn btn-ghost">View My Skills</a>
+            </div>
+            <div class="tech-chips">
+                <span class="chip">React Native</span>
+                <span class="chip">iOS</span>
+                <span class="chip">Android</span>
+                <span class="chip">Firebase</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                    <div class="app-statusbar">
+                        <span>9:41</span>
+                        <span>&#x25CF;&#x25CF;&#x25CF;</span>
+                    </div>
+                    <div class="app-topbar">
+                        <h4>Dashboard</h4>
+                        <span>Welcome back</span>
+                    </div>
+                    <div class="app-cards">
+                        <div class="app-card">
+                            <strong>128</strong>
+                            <span>Active users</span>
+                        </div>
+                        <div class="app-card">
+                            <strong>98%</strong>
+                            <span>Uptime</span>
+                        </div>
+                    </div>
+                    <div class="app-list">
+                        <div class="app-list-item">
+                            <div class="app-list-dot"></div>
+                            <div>
+                                <span class="app-list-title">Push notification</span>
+                                <span class="app-list-sub">Sent 2 min ago</span>
+                            </div>
+                        </div>
+                        <div class="app-list-item">
+                            <div class="app-list-dot"></div>
+                            <div>
+                                <span class="app-list-title">New sign-up</span>
+                                <span class="app-list-sub">Sent 14 min ago</span>
+                            </div>
+                        </div>
+                        <div class="app-list-item">
+                            <div class="app-list-dot"></div>
+                            <div>
+                                <span class="app-list-title">Payment received</span>
+                                <span class="app-list-sub">Sent 1 hr ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-tabbar">
+                        <span class="tab-dot active"></span>
+                        <span class="tab-dot"></span>
+                        <span class="tab-dot"></span>
+                        <span class="tab-dot"></span>
+                    </div>
+                </div>
+                <div class="phone-tag">&#x1F4F1; Built with React Native</div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 class="section-title">Building for <em>mobile and web</em></h2>
+                <p class="about-para">I'm a developer with a foundation in Computer Science, currently studying at Kwame Nkrumah University of Science and Technology, focused on building mobile apps with React Native alongside web development.</p>
+                <p class="about-para">I care about how software feels to use — clean interfaces, fast load times, and interactions that feel native, whether it's running on a phone or in the browser.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Core skills</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Platforms — iOS &amp; Android</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Remote-ready</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-education">
+                <h3 class="edu-title">Education</h3>
+                <div class="edu-card">
+                    <div class="edu-dot"></div>
+                    <div>
+                        <strong>BSc. Computer Science</strong>
+                        <p>Kwame Nkrumah University of Science and Technology</p>
+                        <span class="edu-year">2025 – Present</span>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-dot"></div>
+                    <div>
+                        <strong>St. Louis Senior High School</strong>
+                        <p>Secondary Education</p>
+                        <span class="edu-year">2022 – 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <h2 class="section-title centered">My Skills<span class="accent">.</span></h2>
+
+        <div class="skill-card skill-featured">
+            <div class="skill-icon">&#x1F4F1;</div>
+            <div class="skill-featured-content">
+                <h3>Mobile App Development</h3>
+                <p>Building cross-platform mobile apps with React Native — from UI and navigation to API integration and app store deployment.</p>
+                <div class="skill-tags">
+                    <span>React Native</span>
+                    <span>Expo</span>
+                    <span>Firebase</span>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">&#x1F310;</div>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, and JavaScript to create responsive and visually appealing websites that work on all devices.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#x1F4BB;</div>
+                <h3>Software Development</h3>
+                <p>Proficient in Java, C++, and Python for building robust software applications and algorithms.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#x1F4E3;</div>
+                <h3>Social Media Management</h3>
+                <p>Manage and optimize social media accounts to enhance online presence and drive meaningful engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title centered">Let's Create<br><em>Something Amazing</em><span class="accent">.</span></h2>
+        <p class="contact-intro">Have a project in mind? I'd love to hear about it. Drop me a message!</p>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <a href="tel:+233509306832" class="contact-item">
+                    <div class="contact-icon"><img src="phone.png" alt="Phone"></div>
+                    <div>
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+233 509 306 832</span>
+                    </div>
+                </a>
+                <a href="mailto:bdernestina5@gmail.com" class="contact-item">
+                    <div class="contact-icon"><img src="email.png" alt="Email"></div>
+                    <div>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">bdernestina5@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="contact-item">
+                    <div class="contact-icon"><img src="linkedin.png" alt="LinkedIn"></div>
+                    <div>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">@bdernestina5@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://instagram.com/iam_akuah" target="_blank" class="contact-item">
+                    <div class="contact-icon"><img src="instagram.png" alt="Instagram"></div>
+                    <div>
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-value">@iam_akuah</span>
+                    </div>
+                </a>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div id="form-success" class="success-message" style="display:none">
+                    <span class="success-check">&#x2713;</span>
+                    <div>
+                        <strong>Message Sent!</strong>
+                        <p>Thank you! I'll get back to you soon.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. John Smith" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Phone Number</label>
+                    <input type="tel" id="contact" name="contact" placeholder="+233 ...">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-arrow">&#x2192;</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Crafted with <span class="heart">&#x2665;</span> by <strong>Tina Codes</strong> &middot; <span id="year"></span></p>
+    </footer>
+
+    <script src="web.js"></script>
+</body>
+</html>
