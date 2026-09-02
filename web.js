@@ -64,7 +64,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.skill-card, .edu-card, .contact-item').forEach(el => {
+document.querySelectorAll('.skill-card, .project-card, .edu-card, .contact-item').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
