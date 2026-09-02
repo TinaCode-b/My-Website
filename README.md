@@ -2,7 +2,7 @@
 
 A personal portfolio site for Tina, a developer studying Computer Science at Kwame Nkrumah University of Science and Technology, focused on mobile app development with React Native alongside web development.
 
-**[View live site →](https://gk-11.github.io/tina-portfolio1/)**
+
 
 ## About
 
