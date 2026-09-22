@@ -982,10 +982,14 @@ textarea:focus-visible {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--text-on-dark);
+    color: #f5f0ec !important;
     letter-spacing: -0.01em;
     margin-bottom: 0.7rem;
     text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+[data-theme="dark"] .skill-featured-content h3 {
+    color: #f0ece6 !important;
 }
 
 .skill-featured-content p {
@@ -1133,12 +1137,12 @@ textarea:focus-visible {
     color: var(--text-light);
 }
 
-.project-status {
+.project-card .project-meta .project-status {
     font-size: 0.72rem;
     font-weight: 700;
-    color: #15a56a;
-    background: rgba(21, 165, 106, 0.12);
-    border: 1px solid rgba(21, 165, 106, 0.28);
+    color: #15a56a !important;
+    background: rgba(21, 165, 106, 0.12) !important;
+    border: 1px solid rgba(21, 165, 106, 0.28) !important;
     border-radius: 999px;
     padding: 0.2rem 0.55rem;
 }
@@ -1172,12 +1176,6 @@ textarea:focus-visible {
     border: 1px solid var(--border);
     border-radius: 999px;
     padding: 0.32rem 0.68rem;
-}
-
-.project-card:nth-child(2) .project-status {
-    color: var(--accent);
-    background: var(--accent-light);
-    border-color: rgba(200, 80, 122, 0.26);
 }
 
 .projects-teaser {
@@ -1487,7 +1485,7 @@ textarea:focus-visible {
     color: var(--text-muted);
 }
 
-/* ==================== FOOTER ==================== */
+/*FOOTER */
 .footer {
     position: relative;
     z-index: 1;
@@ -1501,7 +1499,7 @@ textarea:focus-visible {
 
 .footer strong { color: var(--accent); }
 
-/* ==================== ANIMATIONS ==================== */
+/*  ANIMATIONS  */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to { opacity: 1; transform: translateY(0); }
@@ -1517,7 +1515,7 @@ textarea:focus-visible {
     50% { transform: translateY(-6px); }
 }
 
-/* ==================== RESPONSIVE ==================== */
+/*  RESPONSIVE  */
 @media (max-width: 900px) {
     .navbar { padding: 1.2rem 2rem; }
     .navbar.scrolled { padding: 0.9rem 2rem; }
