@@ -1406,7 +1406,7 @@ textarea:focus-visible {
     transition: color var(--transition);
 }
 
-/* ==================== FORM ==================== */
+/*  FORM*/
 .contact-form {
     background: var(--bg-card);
     border: 1px solid var(--border);
