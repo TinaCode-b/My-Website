@@ -43,6 +43,25 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 // ==================== YEAR ====================
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ==================== COPY EMAIL ====================
+const copyEmailBtn = document.getElementById('copy-email-btn');
+if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', () => {
+        const email = copyEmailBtn.dataset.email;
+        const label = document.getElementById('copy-email-label');
+        const original = label.textContent;
+        const restore = () => { label.textContent = original; };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(() => {
+                label.textContent = 'Email copied to clipboard!';
+                setTimeout(restore, 2500);
+            }).catch(() => { window.location.href = `mailto:${email}`; });
+        } else {
+            window.location.href = `mailto:${email}`;
+        }
+    });
+}
+
 // ==================== SMOOTH SCROLL (extra safety) ====================
 document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
@@ -64,7 +83,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.skill-card, .project-card, .edu-card, .contact-item').forEach(el => {
+document.querySelectorAll('.service-col, .project-card, .edu-card, .contact-item').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
