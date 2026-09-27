@@ -1023,7 +1023,7 @@ textarea:focus-visible {
 .project-visual {
     border-radius: var(--radius-sm);
     background: var(--bg-dark);
-    height: 240px;
+    aspect-ratio: 16 / 9;
     margin-bottom: 1.2rem;
     overflow: hidden;
     display: flex;
