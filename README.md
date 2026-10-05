@@ -1,74 +1,38 @@
-# Tina — Mobile App Developer Portfolio
+# Ernestina Boakye Dankwah — Portfolio
 
-A personal portfolio site for Tina, a developer studying Computer Science at Kwame Nkrumah University of Science and Technology, focused on mobile app development with React Native alongside web development.
+Plain HTML, CSS and vanilla JavaScript. No build step, no dependencies.
 
-view Live page  https://tinacode-b.github.io/My-Website/
-
-## About
-
-This is a single-page portfolio built with plain HTML, CSS, and JavaScript — no frameworks or build step. It covers:
-
-- **Home** — intro and a quick snapshot of core tech
-- **About** — background, education, and a short bio
-- **Skills** — mobile app development (React Native, Expo, Firebase, REST APIs), web development, software development, and social media management
-- **Contact** — a working contact form (via EmailJS) plus phone, email, LinkedIn, and Instagram links
-
-## Features
-
-- Light/dark mode toggle with saved preference (`localStorage`)
-- Fully responsive layout, down to small mobile screens
-- Smooth-scroll navigation with a mobile hamburger menu
-- Scroll-reveal animations on skill, education, and contact cards
-- Contact form wired up to [EmailJS](https://www.emailjs.com/) for message delivery
-
-## Tech Stack
-
-| Layer      | Tools |
-|------------|-------|
-| Markup     | HTML5 |
-| Styling    | CSS3 (custom properties, Grid, Flexbox) |
-| Fonts      | [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk), [Inter](https://fonts.google.com/specimen/Inter) |
-| Scripting  | Vanilla JavaScript |
-| Forms      | [EmailJS](https://www.emailjs.com/) |
-| Hosting    | GitHub Pages |
-
-## Project Structure
-
+## Structure
 ```
-tina-portfolio1/
-├── index.html      # Page markup and content
-├── style.css       # All styling, including light/dark theme variables
-├── web.js          # Theme toggle, nav, scroll reveal, contact form logic
-├── phone.png
-├── email.png
-├── linkedin.png
-├── instagram.png   # Contact icons
-└── README.md
+index.html          page markup
+css/styles.css      all styling (light + dark theme tokens at the top)
+js/data.js          YOUR CONTENT: contact details, projects, skills, stats
+js/main.js          rendering, filters, case-study overlay, nav, theme, form
+assets/projects/    project screenshots (cinesynapse, fanfare, chronicle, elveelia .jpg)
 ```
 
-## Running Locally
+## Run locally
+Open `index.html` in a browser, or run `npx serve .` in this folder.
 
-No build tools needed — just open the file directly, or serve it locally:
+## Edit content
+Everything you will normally change is in `js/data.js`:
+- `CONFIG`: email, phone, WhatsApp, GitHub, Instagram, and `linkedin` (paste your profile URL).
+- `projects`: add `live` and `github` links, swap images, change descriptions.
+- Bloom shows a blurred "coming soon" preview. Add `assets/projects/bloom.png` and
+  remove `soon:true` from the Bloom entry to show the real screenshot.
+- DecorAI GH: add `assets/projects/decoraigh.png` for a real preview.
 
-```bash
-git clone https://github.com/GK-11/tina-portfolio1.git
-cd tina-portfolio1
-# then open index.html in your browser, or run a local server:
-python3 -m http.server 8000
+## Contact form
+The form validates input, then opens the visitor's email app with the message prefilled
+(it has no server). For direct delivery, connect Formspree or EmailJS in `js/main.js`.
+
+## Push to GitHub
 ```
-
-Visit `http://localhost:8000` in your browser.
-
-## Deployment
-
-This site is deployed with **GitHub Pages** from the `main` branch. Any changes pushed to `main` go live automatically.
-
-## Contact
-
-- **Email:** bdernestina5@gmail.com
-- **Phone:** +233 509 306 832
-- **Instagram:** [@iam_akuah](https://instagram.com/iam_akuah)
-
----
-
-Crafted with ♥ by Tina Codes# Tina-Website
+git init
+git add .
+git commit -m "Redesign portfolio"
+git branch -M main
+git remote add origin https://github.com/<you>/<repo>.git
+git push -u origin main
+```
+Deploy free with Vercel or GitHub Pages (serve the repository root).
