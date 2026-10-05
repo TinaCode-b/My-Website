@@ -105,9 +105,18 @@ $("#cform").addEventListener("submit",e=>{
   if(!v("name"))bad="name";else if(!/^\S+@\S+\.\S+$/.test(v("email")))bad="email";else if(v("msg").length<10)bad="msg";
   if(bad){f.elements[bad].setAttribute("aria-invalid","true");f.elements[bad].focus();
     m.textContent={name:"Please enter your name.",email:"Enter a valid email address so I can reply.",msg:"Write a short message (at least 10 characters)."}[bad];return}
-  const body=v("msg")+"\n\n"+v("name")+"\n"+v("email")+(v("phone")?"\n"+v("phone"):"");
-  m.textContent="Opening your email app. If nothing opens, write to "+CONFIG.email+" directly.";
-  location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Portfolio enquiry from "+v("name"))+"&body="+encodeURIComponent(body);
+  const btn=f.querySelector("button[type=submit]"),label=btn.textContent;
+  const mailFallback=()=>{
+    const body=v("msg")+"\n\n"+v("name")+"\n"+v("email")+(v("phone")?"\n"+v("phone"):"");
+    m.textContent="Couldn't send directly, so I'm opening your email app. If nothing opens, write to "+CONFIG.email+".";
+    location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Portfolio enquiry from "+v("name"))+"&body="+encodeURIComponent(body);
+  };
+  btn.disabled=true;btn.textContent="Sending…";m.textContent="";
+  fetch(CONFIG.formspree,{method:"POST",headers:{"Accept":"application/json","Content-Type":"application/json"},
+    body:JSON.stringify({name:v("name"),email:v("email"),phone:v("phone"),message:v("msg"),_subject:"Portfolio enquiry from "+v("name")})})
+    .then(r=>{if(!r.ok)throw new Error("send failed");f.reset();m.textContent="Message sent. Thank you, I'll reply soon."})
+    .catch(mailFallback)
+    .finally(()=>{btn.disabled=false;btn.textContent=label});
 });
 
 /* counters (years / projects count up; 2026 stays static) */

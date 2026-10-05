@@ -1,8 +1,10 @@
-
+/* Edit this file to update your content: contact details, projects, skills and stats. */
+/* ---------- Data (edit here) ---------- */
 const CONFIG={
   email:"bdernestina5@gmail.com",phone:"+233 509 306 832",whatsapp:"https://wa.me/233509306832",
-  github:"https://github.com/TinaCode-b",instagram:"https://instagram.com/iam_akuah",
-  linkedin:"https://linkedin.com/in/ernestina-boakye-dankwah" 
+  github:"https://github.com/TinaCode-b",
+  formspree:"https://formspree.io/f/maeqnwbo",instagram:"https://instagram.com/iam_akuah",
+  linkedin:"" // paste your LinkedIn profile URL here
 };
 const projects=[
  {id:"cinesynapse",title:"CineSynapse Studio",category:"Web",type:"Web Application",hue:190,mock:"film",
