@@ -4,7 +4,7 @@ const CONFIG={
   email:"bdernestina5@gmail.com",phone:"+233 509 306 832",whatsapp:"https://wa.me/233509306832",
   github:"https://github.com/TinaCode-b",
   formspree:"https://formspree.io/f/maeqnwbo",instagram:"https://instagram.com/iam_akuah",
-  linkedin:"" // paste your LinkedIn profile URL here
+  linkedin:"https://linkedin.com/in/ernestina-boakye-dankwah" 
 };
 const projects=[
  {id:"cinesynapse",title:"CineSynapse Studio",category:"Web",type:"Web Application",hue:190,mock:"film",
@@ -25,10 +25,10 @@ const projects=[
   contribution:"Designed and built the full site, from brand look to responsive pages.",github:"",live:"https://elveeliamedspa.vercel.app/"},
  {id:"bloom",title:"Bloom",category:"Mobile",type:"Period Tracker App",hue:150,mock:"bloom",soon:true,
   description:"A period tracker for logging your cycle and seeing what comes next.",
-  image:"assets/projects/bloom.png",technologies:["Kotlin","Jetpack Compose","Supabase"],
-  contribution:"Designed the screens, built the app in Jetpack Compose and connected it to Supabase.",github:"",live:""},
+  image:"assets/projects/bloom.png",technologies:["React Native","Expo","Supabase"],
+  contribution:"Designed the screens, built the app in React Native and connected it to Supabase.",github:"",live:""},
  {id:"decoraigh",title:"DecorAI GH",category:"AI",type:"AI-Powered Mobile Application",hue:215,mock:"deco",
-  description:"An AI app that helps people picture and plan their interiors.",
+  description:"An AI app that helps people picture and plan their interiors or even their events by generating realistic images of their rooms with new furniture and decor.",
   image:"assets/projects/decoraigh.png",technologies:["React Native","Expo","Java","Spring Boot","PostgreSQL"],
   contribution:"Built the mobile client and the Spring Boot API, and designed the full app experience.",github:"https://github.com/seyramstephanie/DecorAI-GH",live:""}
 ];
