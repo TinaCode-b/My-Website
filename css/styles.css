@@ -220,6 +220,13 @@ html[data-theme=dark] .tg .sun{display:block}html[data-theme=dark] .tg .moon{dis
 .pf .bd{display:flex;flex-direction:column;gap:6px;height:calc(100% - 20px)}.pf b{flex:1}
 .hero2{flex:2;border-radius:12px;background:linear-gradient(110deg,hsl(var(--h) 25% 62%) 50%,hsl(var(--h) 55% 38%) 50%)}
 .chips{display:flex;gap:5px;flex:.4}.chips b{border-radius:99px}
+.v-deco .bd{gap:7px}.hero2{position:relative;overflow:hidden;background:linear-gradient(145deg,#d9c4a6 0 42%,#8b735b 42% 70%,#3d4c43 70%)}
+.hero2::before{content:"";position:absolute;left:17%;right:12%;bottom:0;height:46%;border-radius:24px 24px 0 0;background:#6f675c;box-shadow:28px -17px 0 -8px #d5b27a, -28px -12px 0 -12px #a7b39c}
+.hero2::after{content:"";position:absolute;left:12%;top:16%;width:34%;height:25%;border:3px solid rgba(255,255,255,.65);background:rgba(255,255,255,.18)}
+.hero2 i{position:absolute;left:8px;bottom:7px;z-index:1;color:#fff;font-size:6px;font-style:normal;font-weight:600}
+.deco-copy{display:flex;flex-direction:column;gap:1px}.deco-copy b{font-size:8px;color:#f5efe7}.deco-copy span{font-size:5px;color:rgba(255,255,255,.55)}
+.v-deco .chips{flex:none}.v-deco .chips b{width:14px;height:14px;border:2px solid #0b0d13;background:#d9c4a6}.v-deco .chips b:nth-child(2){background:#8b735b}.v-deco .chips b:nth-child(3){background:#6f675c}.v-deco .chips b:nth-child(4){background:#a7b39c}
+.deco-cta{display:block;padding:5px;border-radius:6px;background:#d5b27a;color:#1d211d;text-align:center;font-size:6px;font-weight:700}.deco-cta.small{margin-top:auto;background:#a7b39c}.mini-room{display:block;flex:1;border-radius:10px;background:linear-gradient(145deg,#d9c4a6 0 42%,#8b735b 42% 70%,#3d4c43 70%);position:relative;overflow:hidden}.mini-room::after{content:"";position:absolute;left:19%;right:10%;bottom:0;height:43%;border-radius:16px 16px 0 0;background:#6f675c}.mini-line{height:6px!important;flex:none!important;width:70%!important;background:rgba(255,255,255,.18)!important}.mini-line.short{width:45%!important}
 .bigmail{display:inline-block;font-size:clamp(26px,5.4vw,78px);font-weight:700;letter-spacing:-.045em;line-height:1.1;margin-bottom:30px;padding-bottom:6px;background:linear-gradient(var(--acc),var(--acc)) 0 100%/0% 3px no-repeat;transition:background-size .5s cubic-bezier(.2,.7,.2,1),color .3s;overflow-wrap:anywhere}
 .bigmail:hover{background-size:100% 3px;color:var(--acc)}
 .shot img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.card:hover .shot img{transform:scale(1.04)}

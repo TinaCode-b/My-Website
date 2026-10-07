@@ -8,7 +8,7 @@ const CONFIG={
 };
 const projects=[
  {id:"cinesynapse",title:"CineSynapse Studio",category:"Web",type:"Web Application",hue:190,mock:"film",
-  description:"History, Reimagined. Stories that make the past feel cinematic.",
+  description:"CineSynapse Studio is a creative platform for discovering, exploring, and connecting through the world of cinema.",
   image:"assets/projects/cinesynapse.jpg",focus:"center top",technologies:["React","JavaScript","CSS"],
   contribution:"Designed the interface and built the front end, from component structure to the browsing and discovery flow.",github:"",live:"https://cinesynapsestudio.vercel.app"},
  {id:"fanfare",title:"Fanfare",category:"Web",type:"News Website",hue:350,mock:"news",
@@ -24,7 +24,7 @@ const projects=[
   image:"assets/projects/elveelia.jpg",focus:"left center",technologies:["HTML","CSS","JavaScript"],
   contribution:"Designed and built the full site, from brand look to responsive pages.",github:"",live:"https://elveeliamedspa.vercel.app/"},
  {id:"bloom",title:"Bloom",category:"Mobile",type:"Period Tracker App",hue:150,mock:"bloom",soon:true,
-  description:"A period tracker for logging your cycle, tracking your symptoms, and predicting your next period,.",
+  description:"A period tracker for logging your cycle, tracking your symptoms, and predicting your next period.",
   image:"assets/projects/bloom.png",technologies:["React Native","Expo","Firebase"],
   contribution:"Designed the screens, built the app in React Native and connected it to Firebase.",github:"",live:""},
  {id:"decoraigh",title:"DecorAI GH",category:"AI",type:"AI-Powered Mobile Application",hue:215,mock:"deco",

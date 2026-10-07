@@ -10,7 +10,8 @@ const bl=n=>Array.from({length:n},(_,i)=>`<b style="--k:${i}"></b>`).join("");
 const tb='<div class="tb"><i></i><i></i><i></i></div>';
 function mock(p){
   const m=p.mock;
-  if(m==="bloom"||m==="deco")return `<div class="pf one v-${m}"><span class="nt"></span><div class="bd">${m==="deco"?'<span class="hero2"></span><div class="chips"><b></b><b></b><b></b></div>':bl(4)}</div></div><div class="pf two v-${m}"><span class="nt"></span><div class="bd">${bl(3)}</div></div>`;
+  if(m==="deco")return '<div class="pf one v-deco"><span class="nt">DecorAI GH</span><div class="bd"><span class="hero2"><i>Living room</i></span><div class="deco-copy"><b>Modern organic</b><span>AI-generated concept</span></div><div class="chips"><b></b><b></b><b></b><b></b></div><span class="deco-cta">Generate design</span></div></div><div class="pf two v-deco"><span class="nt">Your space</span><div class="bd"><span class="mini-room"></span><b class="mini-line"></b><b class="mini-line short"></b><span class="deco-cta small">Save concept</span></div></div>';
+  if(m==="bloom")return `<div class="pf one v-${m}"><span class="nt"></span><div class="bd">${bl(4)}</div></div><div class="pf two v-${m}"><span class="nt"></span><div class="bd">${bl(3)}</div></div>`;
   const body={film:'<span class="h"></span><div class="rowp">'+bl(6)+'</div><div class="rowp s">'+bl(6)+'</div>',news:'<span class="h big"></span><span class="h"></span><div class="cols">'+bl(3)+'</div>',time:'<u></u>'+bl(4),spa:'<span class="orb"></span><span class="h"></span><span class="h s"></span><em></em>'}[m];
   return `<div class="bf v-${m}">${tb}<div class="bd">${body}</div></div>`;
 }
